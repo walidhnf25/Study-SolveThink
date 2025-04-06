@@ -1,0 +1,314 @@
+body {
+    background: linear-gradient(135deg, #f6f8fa, #e9ecef);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card {
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    max-width: 550px;
+    width: 100%;
+    border: none;
+}
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-icon {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+.form-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+.form-subtitle {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #495057;
+    margin: 25px 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 8px;
+}
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.form-control, .form-select {
+    border-radius: 10px;
+    padding: 12px 12px 12px 45px;
+    border: 1px solid #ced4da;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+    border-color: #86b7fe;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    z-index: 10;
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+.form-footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 25px;
+}
+
+.file-upload-container {
+position: relative;
+margin-bottom: 1.5rem;
+}
+
+.custom-file-upload {
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.file-upload-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background: #f0f5ff;
+color: #4361ee;
+padding: 10px 20px;
+border-radius: 8px;
+border: 2px dashed #4361ee;
+cursor: pointer;
+font-weight: 500;
+transition: all 0.3s ease;
+margin-bottom: 10px;
+width: 100%;
+}
+
+.file-upload-btn:hover {
+background: #e0ebff;
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(67, 97, 238, 0.1);
+}
+
+.selected-file {
+margin-top: 8px;
+font-size: 14px;
+color: #666;
+padding: 5px 10px;
+background: #f8f9fa;
+border-radius: 4px;
+text-align: center;
+}
+
+.file-preview-container {
+margin-top: 10px;
+width: 100%;
+display: none;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.file-preview-container img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 6px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+margin: 0 auto;
+}
+
+.file-upload-btn.has-file {
+background: #e6f7e6;
+border-color: #28a745;
+color: #28a745;
+}
+
+.clickable-input-group {
+cursor: pointer;
+}
+.clickable-input-group input {
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .form-title {
+        font-size: 1.3rem;
+    }
+
+    .form-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .form-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        margin-bottom: 12px;
+    }
+
+    .form-control, .form-select {
+        padding: 10px 10px 10px 40px;
+        font-size: 0.9rem;
+    }
+
+    .input-icon {
+        font-size: 1rem;
+        left: 12px;
+        top: 11px;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .file-upload-btn {
+        padding: 8px 15px;
+    }
+
+    .file-preview-container img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .modal-dialog {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .modal-content {
+        border-radius: 12px;
+    }
+
+    .modal-header {
+        padding: 10px 15px;
+    }
+
+    .modal-header .modal-title {
+        font-size: 1rem;
+    }
+
+    .modal-body {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .modal-body p {
+        margin-bottom: 10px;
+    }
+
+    .modal-footer {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+    }
+
+    /* Make buttons fit side by side */
+    .modal-footer button,
+    .modal-footer a {
+        width: 48% !important;
+        margin: 0 !important;
+        padding: 8px 5px !important;
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
+    }
+
+    /* Give space between buttons */
+    .modal-footer button:first-child {
+        margin-right: 4px !important;
+    }
+
+    /* Text adjustments for small screens */
+    .btn {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Specific adjustments for confirmation modal */
+    #confirmSubmitModal .modal-footer,
+    #pesananModal .modal-footer {
+        justify-content: center !important;
+    }
+
+    #confirmSubmitModal .modal-footer button,
+    #pesananModal .modal-footer button,
+    #pesananModal .modal-footer a {
+        margin: 0 5px !important;
+    }
+
+    .selected-file {
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .form-text {
+        font-size: 12px;
+    }
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 576px) {
+    .clickable-input-group input,
+    .btn,
+    .file-upload-btn {
+        min-height: 44px; /* Minimum touch target size */
+    }
+
+    .modal-footer {
+        flex-direction: column;
+    }
+
+    .modal-footer button, .modal-footer a {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
