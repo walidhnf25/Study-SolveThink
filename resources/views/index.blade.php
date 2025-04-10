@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="card bg-white">
+    <div class="card bg-white" style="max-width: 700px;">
         <div class="form-header">
             <div class="form-icon"><i class="bi bi-mortarboard-fill"></i></div>
             <div class="form-title">Pendaftaran Kelas Bimbingan Belajar</div>
